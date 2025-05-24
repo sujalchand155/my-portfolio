@@ -1,7 +1,6 @@
 "use client";
 
 import Navbar from "@/components/navbar";
-// import Footer from "@/components/footer"; // ← Optional: remove if unused
 import { Typewriter } from "react-simple-typewriter";
 import Link from "next/link";
 
@@ -14,7 +13,6 @@ export default function Home() {
           Hi, I&apos;m <span className="text-blue-400">Sujal Chand</span>
         </h1>
 
-        {/* Typing Animation */}
         <div className="mt-4 text-xl md:text-2xl font-medium">
           <Typewriter
             words={[
@@ -31,14 +29,12 @@ export default function Home() {
           />
         </div>
 
-        {/* Description */}
         <p className="mt-6 text-lg md:text-xl max-w-2xl">
           I build real-world applications with a focus on{" "}
           <strong>Web Development, Data Analysis, and Machine Learning</strong>.  
           Passionate about solving problems using technology.
         </p>
 
-        {/* Download Resume Button */}
         <div className="mt-8">
           <Link
             href="https://drive.google.com/file/d/1I_-9stcPgLqiJZodDKNevAEXF1m3Ygqs/view?usp=drive_link"
@@ -49,9 +45,6 @@ export default function Home() {
           </Link>
         </div>
       </div>
-
-      {/* Optional Footer */}
-      {/* <Footer /> */}
     </>
   );
 }
