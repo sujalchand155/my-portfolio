@@ -36,13 +36,14 @@ export default function Home() {
         </p>
 
         <div className="mt-8">
-        <Link
-  href="https://drive.google.com/uc?export=download&id=1I_-9stcPgLqiJZodDKNevAEXF1m3Ygqs"
+       <Link
+  href="/resume.pdf"
   target="_blank"
   rel="noopener noreferrer"
+  download
   className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition"
 >
-  📄 View/Download Resume
+  📄 Download Resume
 </Link>
         </div>
       </div>
