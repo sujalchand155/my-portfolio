@@ -6,11 +6,11 @@ export default function Certificates() {
   const certificates = [
     {
       title: "Hackathon Participation",
-      image: "/certificates/imagine.png",
+      image: "/imagine.png",
     },
     {
       title: "IBM Data Analytics Internship",
-      image: "/certificates/ibm.png",
+      image: "/ibm.png",
     },
   ];
 
