@@ -1,15 +1,16 @@
 "use client";
-import { FileText, ExternalLink } from "lucide-react";
+import { Image } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 export default function Certificates() {
   const certificates = [
     {
       title: "Hackathon Participation",
-      link: "https://drive.google.com/file/d/1CsvAUKwKM3wNoP0LyrYL0OcT9rk0tXQI/view?usp=drive_link",
+      image: "/certificates/imagine.png",
     },
     {
       title: "IBM Data Analytics Internship",
-      link: "https://drive.google.com/file/d/1DGRV7gRPtdLcJrvp5f84kWIYQESOhgeP/view?usp=drive_link",
+      image: "/certificates/ibm.png",
     },
   ];
 
@@ -21,14 +22,16 @@ export default function Certificates() {
           Here are some of my certifications.
         </p>
 
-        {/* Centering Certificates */}
         <div className="flex flex-wrap justify-center gap-6">
           {certificates.map((certificate, index) => (
-            <div key={index} className="bg-white/10 p-6 rounded-lg shadow-lg flex flex-col items-center transition-all duration-300 hover:scale-105 w-80">
-              <FileText size={40} className="text-blue-400 mb-2" />
+            <div
+              key={index}
+              className="bg-white/10 p-6 rounded-lg shadow-lg flex flex-col items-center transition-all duration-300 hover:scale-105 w-80"
+            >
+              <Image size={40} className="text-blue-400 mb-2" />
               <h3 className="text-xl font-semibold text-center">{certificate.title}</h3>
               <a
-                href={certificate.link}
+                href={certificate.image}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-3 text-blue-300 hover:underline flex items-center"
